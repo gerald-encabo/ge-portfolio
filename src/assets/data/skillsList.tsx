@@ -18,7 +18,7 @@ const skillsCategoryList: Array<skillsListType> = [
     },
     {
         id: 4,
-        category: 'Other tools',
+        category: 'Others',
         listSkills: ['Web Accessibility', 'Responsive Web Design', 'Agile (Scrum)', 'GitHub', 'Visual Studio', 'Notepad++', 'Adobe Photoshop', 'Adobe Launch', 'Google Analytics', 'Google Tag Manager', 'Figma', 'GlooMaps', 'SiteImprove', 'Semrush', 'Monetate', 'Trello', 'Asana', 'QR Tiger', 'Hotjar', 'Testing Library', 'JEST', 'Webpack', 'Babel']
     }
 ] 
