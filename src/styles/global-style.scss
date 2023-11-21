@@ -1,0 +1,33 @@
+@import "media-queries.scss";
+@import "color.scss";
+
+/* Global Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Initial Name & Title Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: $fontColor;
+    
+    /* Remove scrollbar in every page */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.container {
+    max-width: 2000px;
+    width: 90%;
+    display: grid;
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}

@@ -1,0 +1,14 @@
+@import '@/styles/color.scss';
+@import '@/styles/media-queries.scss';
+
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 120px;
+    right: 5%;
+
+    & > a {
+        display: flex;
+        justify-content: center;
+        padding: 10px 6px;
+    }
+}

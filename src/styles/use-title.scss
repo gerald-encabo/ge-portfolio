@@ -1,0 +1,25 @@
+@import '@/styles/color.scss';
+@import '@/styles/media-queries.scss';
+
+.title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    h1 {
+        font-family: 'Diplomata SC', serif;
+        font-size: 34px;
+        z-index: 9;
+        padding-right: 2rem;
+        background-color: $lightColor;
+    }
+    span {
+        position: absolute;
+        content: '';
+        background-color: $lineColor;
+        width: 100%;
+        height: 3px;
+    }
+
+}

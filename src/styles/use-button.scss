@@ -1,0 +1,26 @@
+@import '@/styles/color.scss';
+@import '@/styles/media-queries.scss';
+
+.global-btn {
+    text-decoration: none;
+    background-color: $lightColor;
+    border-bottom: 4px solid $lineColor;
+    border-left: 4px solid $lineColor;
+    border-right: 1px solid $lineColor;
+    border-top: 1px solid $lineColor;
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 6px;
+    cursor: pointer;
+
+    &:hover {
+        -moz-box-shadow: 0px 3px 15px $lineColor;
+        -webkit-box-shadow: 0px 3px 15px $lineColor;
+        box-shadow: 0px 3px 15px $lineColor;
+        transition: 0.5s;
+    }
+    &:active {
+        border-bottom-width: 2px;
+        border-left-width: 2px;
+    }
+}
