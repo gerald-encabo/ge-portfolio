@@ -60,7 +60,6 @@ export interface projectTypes {
   icon1: string,
   icon2: string,
   img: string,
-  imgPosition: string,
   alt: string,
   title: string,
   desc: string,

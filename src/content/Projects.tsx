@@ -15,8 +15,8 @@ const Projects = ({id, heading}: useTitleTypes) => {
           projectList.map((list: projectTypes, id: number) => (
             <div className="projects-container"
                  style={{
-                  flexDirection: list.imgPosition === 'start' ? 'row-reverse' : 'row',
-                }}  
+                  flexDirection: list.id % 2 === 0 ? 'row' : 'row-reverse',
+                 }}  
                  key={id}
             >
               <div className='projects-left-wrapper'>
@@ -32,7 +32,7 @@ const Projects = ({id, heading}: useTitleTypes) => {
               <div className='projects-right-wrapper'>
                 <div className='projects-right-column'
                   style={{
-                    margin: list.imgPosition === 'start' ? '0 30px 0 0' : '0 0 0 30px'
+                    margin: list.id % 2 === 0 ? '0 0 0 30px' : '0 30px 0 0'
                   }}
                 >
                   <h1>{list.title}</h1>
