@@ -37,6 +37,8 @@ const Projects = ({id, heading}: useTitleTypes) => {
                 >
                   <h1>{list.title}</h1>
                   <p>{list.desc}</p>
+                  <h3>Tech Stack:</h3>
+                  <p>{list.teckStack}</p>
                   <ul>
                       <li>
                         <UseButton

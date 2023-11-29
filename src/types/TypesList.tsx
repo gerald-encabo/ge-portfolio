@@ -63,5 +63,6 @@ export interface projectTypes {
   imgPosition: string,
   alt: string,
   title: string,
-  desc: string
+  desc: string,
+  teckStack: string
 }

@@ -4,12 +4,12 @@ const skillsCategoryList: Array<skillsListType> = [
     {
         id: 1,
         category: 'Front-End',
-        listSkills: ['HTML5', 'CSS3', 'JavaScript(ES6)', 'SASS/SCSS', 'TypeScript', 'Tailwind', 'Emotion.js', 'Styled Components', 'JSON', 'jQuery', 'Bootstrap5', 'React', 'Redux', 'AJAX']
+        listSkills: ['HTML5', 'CSS3', 'JavaScript (ES6)', 'SASS/SCSS', 'TypeScript', 'Tailwind', 'Emotion.js', 'Styled Components', 'JSON', 'jQuery', 'Bootstrap5', 'React', 'Redux', 'AJAX']
     },
     {
         id: 2,
         category: 'Back-End',
-        listSkills: ['SQL', 'MySQL', 'NoSQL', 'MongoDB', 'PHP', 'Node.js', 'Express.js', 'ASP.NET', 'GraphQL', 'REST API', 'GIT', 'C', 'C#', 'C++']
+        listSkills: ['SQL', 'MySQL', 'NoSQL', 'MongoDB', 'PHP', 'Node.js', 'Express.js', 'ASP.NET', 'GraphQL', 'REST API']
     },
     {
         id: 3,
