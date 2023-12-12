@@ -6,7 +6,7 @@ import guardian from '@/assets/images/guardian-credit-card.jpg';
 export const projectList: Array<projectTypes> = [
     {
         id: 1,
-        link1: 'https://github.com/gerald-encabo/ramen-house-restaurant',
+        link1: 'https://github.com/gerald-encabo/ramen-house',
         link2: 'https://ramen-house.vercel.app/',
         icon1: 'Code',
         icon2: 'Demo',
@@ -14,7 +14,7 @@ export const projectList: Array<projectTypes> = [
         alt: 'Ramen House home page',
         title: 'Ramen House',
         desc: 'This is a full stack responsive e-commerce webpage focusing on the food industry of Ramen or Japanese Noodle soup.',
-        teckStack: 'HTML5, CSS3, JavaScript (ES6), TypeScript, SASS/SCSS, JSON, ReactJS, Redux, Vite, Axios, Node.js, Express.js, Webpack, GraphQL, Vercel, Github, Strapi (CMS)'
+        teckStack: 'HTML5, CSS3, JavaScript (ES6), TypeScript, Styled-Components, JSON, ReactJS, Redux, Vite, Axios, Node.js, Webpack, Vercel, Github'
     },
     {
         id: 2,
