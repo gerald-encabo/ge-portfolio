@@ -1,9 +1,9 @@
-import ScrollToTopBtn from '@/components/ScrollToTopBtn';
-import SociaMedia from '@/components/SociaMedia';
 import About from '@/content/About';
+import Skills from '@/content/Skills';
 import Contact from '@/content/Contact';
 import Projects from '@/content/Projects';
-import Skills from '@/content/Skills';
+import SociaMedia from '@/components/SociaMedia';
+import ScrollToTopBtn from '@/components/ScrollToTopBtn';
 import { navbarTypes } from '@/types/TypesList';
 
 export const Main = () => {

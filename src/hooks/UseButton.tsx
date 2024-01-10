@@ -1,6 +1,6 @@
-import { useButtonTypes } from '@/types/TypesList'
-import { NavLink } from 'react-router-dom'
 import '@/styles/use-button.scss'
+import { NavLink } from 'react-router-dom'
+import { useButtonTypes } from '@/types/TypesList'
 
 const useButton = (
   {

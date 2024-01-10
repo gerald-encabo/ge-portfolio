@@ -1,5 +1,5 @@
-import { useTitleTypes } from '@/types/TypesList';
 import '@/styles/use-title.scss';
+import { useTitleTypes } from '@/types/TypesList';
 
 const Title = ({heading}: useTitleTypes) => {
   return (

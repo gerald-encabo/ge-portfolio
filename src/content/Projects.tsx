@@ -1,9 +1,9 @@
 import '@/styles/projects.scss'
-import { projectList } from '@/assets/data/projectList';
-import { useTitleTypes, projectTypes } from '@/types/TypesList';
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import Title from '@/hooks/UseTitle';
 import UseButton from '@/hooks/UseButton';
+import { projectList } from '@/assets/data/projectList';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useTitleTypes, projectTypes } from '@/types/TypesList';
 
 const Projects = ({id, heading}: useTitleTypes) => {
   return (
@@ -43,7 +43,7 @@ const Projects = ({id, heading}: useTitleTypes) => {
                       <li>
                         <UseButton
                           to={list.link1}
-                          target='_blank' 
+                          target='_blank'
                           rel='noreferrer'
                           text={list.icon1}
                         />

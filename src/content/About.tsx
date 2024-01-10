@@ -1,12 +1,12 @@
 import '@/styles/about.scss';
-import { useRef, useEffect } from 'react';
-import { useTitleTypes } from '@/types/TypesList';
+import me from '@/assets/images/me.png';
+import Moment from 'moment';
+import UseButton from '@/hooks/UseButton';
 import { init } from 'ityped';
 import { motion } from "framer-motion";
+import { useRef, useEffect } from 'react';
 import { navbarTypes } from '@/types/TypesList';
-import Moment from 'moment';
-import me from '@/assets/images/me.png';
-import UseButton from '@/hooks/UseButton';
+import { useTitleTypes } from '@/types/TypesList';
 
 export const About = ({id}: useTitleTypes) => {
   
@@ -57,12 +57,6 @@ export const About = ({id}: useTitleTypes) => {
           <h1>Gerald Encabo</h1>
           <h3>Front-End <span ref={ textRef }></span></h3>
           <p>Web developer with {yearExp}+ years of experience building and maintaining responsive websites across diverse industries. Proven of experience within web development basics, modern libraries, and the latest frameworks. Knowledgeable in creating user interfaces, writing & testing codes, troubleshooting issues & vulnerabilities, and implementing new features based on stakeholder feedback. Self-motivated toward learning new skills and adapting modern technologies.</p>
-          {/* <NavLink 
-            to={navbarTypes.Contact.toLowerCase()}
-            onClick={() => handleContactClickBtn(navbarTypes.Contact.toLowerCase())} 
-          >
-              {navbarTypes.Contact}
-          </NavLink> */}
           <UseButton 
             to={navbarTypes.Contact.toLowerCase()}
             text={navbarTypes.Contact}

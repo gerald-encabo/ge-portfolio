@@ -1,11 +1,11 @@
 import '@/styles/skills.scss';
-import { useTitleTypes } from '@/types/TypesList';
-import { Suspense, useEffect, useState } from 'react';
 import Title from '@/hooks/UseTitle';
 import Spinner from '@/components/Spinner';
 import ListSkills from '@/components/ListSkills';
 import skillsData from '@/assets/data/skillsList';
 import ButtonCategory from '@/components/ButtonCategory';
+import { useTitleTypes } from '@/types/TypesList';
+import { Suspense, useEffect, useState } from 'react';
 
 // Get all category and put them into object
 const skillList = [...new Set(skillsData.map(item => item.category))];

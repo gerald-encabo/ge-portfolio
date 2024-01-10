@@ -1,8 +1,8 @@
 import '@/styles/navbar.scss'
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import { FaBars, FaTimes } from 'react-icons/fa';
 import { navbarTypes } from '@/types/TypesList';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
 
@@ -26,7 +26,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className='navbar'>
+    <header className='navbar'>
         <div className='navbar-wrapper'>
             <div className='navbar-container container'>
                  <div className='navbar-icon'>
@@ -58,7 +58,7 @@ const Navbar = () => {
                 </ul>
             </div>
         </div>
-    </div>
+    </header>
   )
 }
 

@@ -1,7 +1,7 @@
 import '@/styles/social-media.scss';
 import { NavLink } from 'react-router-dom';
-import { socialMediaTypes } from '@/types/TypesList';
 import { socialMediaList } from '@/assets/data/dataList';
+import { socialMediaTypes } from '@/types/TypesList';
 
 const SociaMedia = () => {
   return (
