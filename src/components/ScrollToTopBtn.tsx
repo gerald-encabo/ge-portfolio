@@ -1,7 +1,7 @@
 import '@/styles/scroll-to-top-btn.scss';
+import UseButton from '@/hooks/UseButton';
 import { useEffect, useState } from 'react';
 import { ImArrowUp2 } from 'react-icons/im';
-import UseButton from '@/hooks/UseButton';
 
 const ScrollToTopBtn = () => {
 

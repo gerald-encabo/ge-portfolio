@@ -1,8 +1,8 @@
 import '@/styles/contact.scss';
+import Title from '@/hooks/UseTitle';
+import { GrMail } from 'react-icons/gr';
 import { useTitleTypes } from '@/types/TypesList';
 import { FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
-import { GrMail } from 'react-icons/gr';
-import Title from '@/hooks/UseTitle';
 
 const Contact = ({id, heading}: useTitleTypes) => {
   return (

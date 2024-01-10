@@ -37,6 +37,7 @@ export interface useTitleTypes {
   id?: string,
   heading: string
 }
+
 export interface useButtonTypes {
   to?: any
   text?: any,

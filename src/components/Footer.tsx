@@ -1,12 +1,12 @@
 import '@/styles/footer.scss';
+import Moment from 'moment';
 import { NavLink } from 'react-router-dom';
 import { socialMediaTypes } from '@/types/TypesList';
 import { socialMediaList } from '@/assets/data/dataList';
-import Moment from 'moment';
 
 const Footer = () => {
   return (
-      <div className='footer'>
+      <footer className='footer'>
           <div className='footer-wrapper'>
               <div className='footer-container container'>
                   <div className='footer-item-left'>
@@ -33,7 +33,7 @@ const Footer = () => {
                   </div>
               </div>
           </div>
-      </div>
+      </footer>
   )
 }
 

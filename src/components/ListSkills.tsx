@@ -1,6 +1,6 @@
 import '@/styles/list-skills.scss';
-import { skillsListTypeProps } from '@/types/TypesList'
 import ListSkillsCard from './ListSkillsCard';
+import { skillsListTypeProps } from '@/types/TypesList'
 
 const ListSkills = ({skillsList}: skillsListTypeProps) => {
 
