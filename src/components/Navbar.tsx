@@ -12,47 +12,49 @@ const Navbar = () => {
 
    const handleClick = () => setClick(!click);
 
-   const handleMenuClick = (navList: string) => {
-         const scrollToId = document.getElementById(navList.toLowerCase());
-         const location = scrollToId?.offsetTop!;
+   const handleNavbarClick = (navList: string) => {
+      const scrollToId = document.getElementById(navList.toLowerCase());
+      const location = scrollToId?.offsetTop!;
 
-         window.scrollTo({
-            left: 0,
-            top: location - 80,
-            behavior: "smooth",
-         })
+      window.scrollTo({
+         left: 0,
+         top: location - 80,
+         behavior: "smooth",
+      })
 
-         // Handle close menu in mobile view
-         setClick(false);
+      // Handle close menu in mobile view
+      setClick(false);
    }
 
    return (
       <header className='navbar'>
-         <div className='navbar-wrapper'>
+         <nav className='navbar-wrapper'>
                <div className='navbar-container container'>
                   <div className='navbar-icon'>
-                        <NavLink 
-                           to={navbarTypes.About.toLowerCase()} 
-                           onClick={() => handleMenuClick(navbarTypes.About.toLowerCase())} 
-                           className='navbar-logo'
-                        >
-                           GE.
-                        </NavLink>
+                     <NavLink 
+                        to={navbarTypes.About.toLowerCase()} 
+                        onClick={() => handleNavbarClick(navbarTypes.About.toLowerCase())} 
+                        className='navbar-logo'
+                     >
+                        GE.
+                     </NavLink>
                   </div>
                   <div className="navbar-mini-device" onClick={handleClick}>
-                     { click ? <FaTimes /> : <FaBars /> }
+                     { 
+                        click ? <FaTimes /> : <FaBars /> 
+                     }
                   </div>
                   <ul className={ click ? 'navbar-menu active' : 'navbar-menu' }>
                      {
                         navbarList.map((navList: string, id: number) => (
-                           <li className='navbar-item' key={id}>
+                           <li className={`navbar-item ${id === count ? 'active' : ''} `} key={id}>
                               <NavLink
                                  to={navList.toLowerCase()}
                                  onClick={() => {
                                     setCount(id);
-                                    handleMenuClick(navList)
+                                    handleNavbarClick(navList)
                                  }} 
-                                 className={`navbar-links ${id === count ? 'active' : ''} `}
+                                 className='navbar-links'
                               >
                                  {navList}
                               </NavLink>
@@ -61,7 +63,7 @@ const Navbar = () => {
                      }
                   </ul>
                </div>
-         </div>
+         </nav>
       </header>
    )
 }
