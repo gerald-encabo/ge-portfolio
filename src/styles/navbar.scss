@@ -13,6 +13,7 @@
         height: 80px;
         width: 100%;
     }
+
     &-container {
         display: flex !important;
         justify-content: space-between;
@@ -20,11 +21,13 @@
         border-bottom: 3px solid $lineColor;
         height: 80px;
     }
+
     &-icon {
         width: 180px;
         font-size: 20px;
         font-weight: 500;
     }
+
     &-logo {
         display: flex;
         justify-content: center;
@@ -33,6 +36,7 @@
         font-family: 'Diplomata SC', serif;
         text-decoration: none;
     }
+
     &-menu {
         display: flex;
         justify-content: space-between;
@@ -62,6 +66,7 @@
             z-index: 1;
         }
     }
+
     &-item {
         text-decoration: none;
         display: inline-block;
@@ -71,6 +76,7 @@
             width: 100%;
         }
     }
+
     &-links{
         font-weight: 400;
         font-size: 20px;
@@ -89,14 +95,17 @@
             display: table;
         }
     }
+
     &-links:hover {
         transition-duration:0.3s;
         font-weight: bold;
         cursor: pointer;
     }
+
     .current {
         font-weight: bold;
     }
+
     &-mini-device {
         display: none;
 
@@ -110,5 +119,11 @@
             font-size: 1.8rem;
             cursor: pointer;
         }
+    }
+    
+    .active {
+        transition-duration:0.3s;
+        font-weight: bold;
+        cursor: pointer;
     }
 }

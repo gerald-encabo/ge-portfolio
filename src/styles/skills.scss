@@ -19,10 +19,12 @@
         @include tablet-devices {
             padding: 2rem 0;
         }
+        
         @include mobile-devices {
             flex-direction: column;
         }
     }
+
     &-left-column {
         height: 100%;
         width: 20%;
@@ -31,6 +33,7 @@
             width: 100%;
         }
     }
+
     &-right-column {
         height: 100%;
         width: 80%;

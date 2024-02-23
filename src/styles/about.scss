@@ -20,6 +20,7 @@
             padding: 2rem 0%;
         }
     }
+
     &-left-wrapper {
         flex: 0.4;
         width: 100%;
@@ -36,6 +37,7 @@
             margin-bottom: 40px;
         }
     }
+    
     &-right-wrapper {
         flex: 0.6;
         width: 100%;
@@ -47,6 +49,7 @@
             padding-right: 0px;
             padding-left: 30px;
         }
+
         @include mobile-devices {
             justify-content: center;
             align-items: center;
@@ -58,12 +61,14 @@
             font-weight: 400;
             font-size: 20px;
         }
+
         h1 {
             color: $fontColor;
             margin: 10px 0;
             font-size: 50px;
             letter-spacing: 1px;
         }
+
         h3 {
             color: $fontColor;
             font-weight: 400;
@@ -74,14 +79,17 @@
                 color: $lineColor;
                 font-weight: 600;
             }
+
             .ityped-cursor {
                 animation: blink 1s infinite;
             }
+
             @keyframes blink {
                 50% { opacity: 1; }
                 100% { opacity: 0; } 
             }
         }
+
         p {
             color: $fontColor;
             margin-bottom: 20px;
@@ -111,6 +119,7 @@
               margin-right: auto;
               width: 90%;
         }
+
         @include mobile-devices {
               width: 70%;
         }
@@ -124,6 +133,7 @@
             height: auto;
         }
     }
+    
     img:hover {
         transform: scale(1.1);
         transition: all 0.3s ease;

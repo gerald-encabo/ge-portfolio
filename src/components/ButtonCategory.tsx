@@ -11,7 +11,7 @@ const ButtonCategory = ({filter, categoryList}: categorySkillListType) => {
   return (
     <div className='button-category'>
         {
-          categoryList.map((category, id) => {
+          categoryList.map((category: string, id: number) => {
             return (
                 <Link
                   to={''}
