@@ -44,6 +44,7 @@
             }
         }
     }
+    
     &-container-right-column {
         width: 40%;
 
@@ -52,14 +53,17 @@
             width: 100%;
         }
     }
+
     &-info {
         display: flex;
         align-items: center;
         font-size: 20px;
     }
+
     &-info:nth-last-child(n+2) {
         margin: 20px 0;
     }
+
     &-logo {
         font-size: 30px;
         margin-right: 10px;
