@@ -30,7 +30,7 @@ const ScrollToTopBtn = () => {
           {
             scrollToTopBtn && (
               <UseButton 
-                to={''}
+                to={'/about'}
                 onClick={scrollUp}
                 text={<ImArrowUp2 />} 
               />
