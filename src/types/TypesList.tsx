@@ -40,11 +40,11 @@ export interface useTitleTypes {
 
 export interface useButtonTypes {
   to?: any
-  text?: any,
+  text?: React.ReactNode;
   onClick?: any,
   key?: number,
   target?: string,
-  rel?:string
+  rel?: string
 }
 
 export interface socialMediaTypes {

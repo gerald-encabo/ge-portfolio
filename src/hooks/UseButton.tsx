@@ -1,23 +1,24 @@
 import '@/styles/use-button.scss'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useButtonTypes } from '@/types/TypesList'
 
 const useButton = (
   {
     to, text, onClick, key, target, rel
   } : useButtonTypes) => {
-  return (
-    <NavLink
-      to={to}
-      onClick={onClick}
-      className='global-btn'
-      key={key}
-      target={target}
-      rel={rel}
-    >
-      {text}
-    </NavLink>
-  )
+
+    return (
+      <Link
+        to={to}
+        onClick={onClick}
+        key={key}
+        target={target}
+        rel={rel}
+        className={`global-btn`}
+      >
+        {text}
+      </Link>
+    )
 }
 
 export default useButton
