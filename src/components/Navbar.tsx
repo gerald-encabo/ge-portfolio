@@ -1,5 +1,5 @@
 import '@/styles/navbar.scss'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { navbarTypes } from '@/types/TypesList';
 import { FaBars, FaTimes } from 'react-icons/fa';
