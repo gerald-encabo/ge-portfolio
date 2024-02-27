@@ -29,7 +29,6 @@ const ScrollToTopBtn = () => {
           {
             scrollToTopBtn && (
               <UseButton 
-                to={'/about'}
                 onClick={scrollUp}
                 text={<ImArrowUp2 />} 
               />
