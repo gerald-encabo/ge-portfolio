@@ -57,6 +57,7 @@
             transition: all 0.5s ease;
         }
     }
+
     &-menu.active {
         @include mobile-devices {
             background-color: $lightColor;
@@ -77,7 +78,7 @@
         }
     }
 
-    &-links{
+    &-links {
         font-weight: 400;
         font-size: 20px;
         display: flex;
@@ -102,10 +103,6 @@
         cursor: pointer;
     }
 
-    .current {
-        font-weight: bold;
-    }
-
     &-mini-device {
         display: none;
 
@@ -121,9 +118,9 @@
         }
     }
     
-    .active {
-        transition-duration:0.3s;
-        font-weight: bold;
-        cursor: pointer;
+    .active  {
+         transition-duration: 0.3s;
+         font-weight: bold;
+         cursor: pointer;
     }
 }

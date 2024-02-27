@@ -47,14 +47,14 @@ const Navbar = () => {
                   <ul className={ click ? 'navbar-menu active' : 'navbar-menu' }>
                      {
                         navbarList.map((navList: string, id: number) => (
-                           <li className={`navbar-item ${id === count ? 'active' : ''} `} key={id}>
+                           <li className="navbar-item" key={id}>
                               <NavLink
                                  to={navList.toLowerCase()}
                                  onClick={() => {
                                     setCount(id);
                                     handleNavbarClick(navList)
                                  }} 
-                                 className='navbar-links'
+                                 className={`navbar-links ${id === count ? 'active' : ''}`}
                               >
                                  {navList}
                               </NavLink>
