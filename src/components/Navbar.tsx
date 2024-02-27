@@ -32,7 +32,7 @@ const Navbar = () => {
                <div className='navbar-container container'>
                   <div className='navbar-icon'>
                      <NavLink 
-                        to={navbarTypes.About.toLowerCase()} 
+                        to={''}
                         onClick={() => handleNavbarClick(navbarTypes.About.toLowerCase())} 
                         className='navbar-logo'
                      >
@@ -54,7 +54,8 @@ const Navbar = () => {
                                     setCount(id);
                                     handleNavbarClick(navList)
                                  }} 
-                                 className={`navbar-links ${id === count ? 'active' : ''}`}
+                                 className={`navbar-links ${id === count ? 'active' : ""}`}
+                                 //className={`navbar-links `}
                               >
                                  {navList}
                               </NavLink>
