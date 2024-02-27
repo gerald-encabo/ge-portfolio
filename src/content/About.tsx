@@ -58,7 +58,6 @@ export const About = ({id}: useTitleTypes) => {
           <h3>Front-End <span ref={ textRef }></span></h3>
           <p>Web developer with {yearExp}+ years of experience building and maintaining responsive websites across diverse industries. Proven of experience within web development basics, modern libraries, and the latest frameworks. Knowledgeable in creating user interfaces, writing & testing codes, troubleshooting issues & vulnerabilities, and implementing new features based on stakeholder feedback. Self-motivated toward learning new skills and adapting modern technologies.</p>
           <UseButton 
-            to={navbarTypes.Contact.toLowerCase()}
             text={navbarTypes.Contact}
             onClick={() => handleContactClickBtn(navbarTypes.Contact.toLowerCase())} 
           />
