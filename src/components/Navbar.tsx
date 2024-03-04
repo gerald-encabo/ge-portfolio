@@ -3,6 +3,8 @@ import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { navbarTypes } from '@/types/TypesList';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { socialMediaList } from '@/assets/data/dataList';
+import { socialMediaTypes } from '@/types/TypesList';
 
 const Navbar = () => {
 
@@ -55,13 +57,28 @@ const Navbar = () => {
                                     handleNavbarClick(navList)
                                  }} 
                                  className={`navbar-links ${id === count ? 'active' : ""}`}
-                                 //className={`navbar-links `}
                               >
                                  {navList}
                               </NavLink>
                            </li>
                         ))
                      }
+                     <div className='navbar-social-media'>
+                     {
+                        socialMediaList.map((list: socialMediaTypes, id: number) => (
+                           <NavLink 
+                              key={id}
+                              to={list.link}
+                              title={list.name}                                 
+                              target='_blank' 
+                              rel='noreferrer'
+                              className='navbar-social-media-icon global-btn'
+                              >
+                              {list.icon}
+                           </NavLink>
+                        ))
+                     }
+                     </div>
                   </ul>
                </div>
          </nav>
