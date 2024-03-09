@@ -63,6 +63,7 @@ const Navbar = () => {
                            </li>
                         ))
                      }
+                     {/* Social Media Buttons on mobile navbar */}
                      <div className='navbar-social-media'>
                      {
                         socialMediaList.map((list: socialMediaTypes, id: number) => (
@@ -74,7 +75,7 @@ const Navbar = () => {
                               rel='noreferrer'
                               className='navbar-social-media-icon global-btn'
                               >
-                              {list.icon}
+                                 {list.icon}
                            </NavLink>
                         ))
                      }

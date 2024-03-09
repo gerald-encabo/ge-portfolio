@@ -43,7 +43,7 @@
         text-align: end;
         font-size: 20px;
         font-weight: 500;
-        color: $fontColor;
+        color: $darkColor;
 
         @include tablet-devices {
             text-align: center;
@@ -80,7 +80,7 @@
         text-decoration: none;
         cursor: pointer;
         height: 100%;
-        color: $fontColor;
+        color: $darkColor;
         font-size: 20px;
         font-weight: 400;
     }
@@ -88,5 +88,4 @@
     &-social-media:hover { 
         font-weight: bold;
     }
-
 }

@@ -33,7 +33,7 @@
 
     &-container:nth-last-child(n+2) { 
         @include mobile-devices {
-            border-bottom: 2px solid $lineColor;
+            border-bottom: 2px solid $darkColor;
             padding-bottom: 30px;
             margin-bottom: 40px;
         }
