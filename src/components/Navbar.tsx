@@ -6,8 +6,8 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { socialMediaList } from '@/assets/data/dataList';
 import { socialMediaTypes } from '@/types/TypesList';
 
-import { FiSun } from "react-icons/fi";
-import { LuMoon } from "react-icons/lu";
+// import { FiSun } from "react-icons/fi";
+// import { LuMoon } from "react-icons/lu";
 
 const Navbar = () => {
 
