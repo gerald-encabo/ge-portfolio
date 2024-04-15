@@ -13,11 +13,11 @@ const Navbar = () => {
 
    const navbarList = Object.values(navbarTypes);
    const [menuBtn, setMenuBtn] = useState<boolean>(false);
-   const [toggleBtn, setToogleBtn] = useState<boolean>(false);
+   // const [toggleBtn, setToogleBtn] = useState<boolean>(false);
    const [count, setCount] = useState<number>(0);
 
    const handleMenuBtn = () => setMenuBtn(!menuBtn);
-   const handleToogleBtn = () => setToogleBtn(!toggleBtn);
+   // const handleToogleBtn = () => setToogleBtn(!toggleBtn);
 
    const handleNavbarClick = (navList: string) => {
       const scrollToId = document.getElementById(navList.toLowerCase());
