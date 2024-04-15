@@ -13,7 +13,8 @@
     box-sizing: border-box;
     font-family: 'Merriweather Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
-    color: $fontColor;
+    color: $darkColor;
+    background-color: $lightColor;
     
     /* Remove scrollbar in every page */
     -ms-overflow-style: none;

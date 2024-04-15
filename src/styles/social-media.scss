@@ -5,10 +5,10 @@
     position: fixed;
     width: 40px;
     height: 180px;
-    border-bottom: 4px solid $lineColor;
-    border-left: 4px solid $lineColor;
-    border-right: 1px solid $lineColor;
-    border-top: 1px solid $lineColor;
+    border-bottom: 4px solid $darkColor;
+    border-left: 4px solid $darkColor;
+    border-right: 1px solid $darkColor;
+    border-top: 1px solid $darkColor;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -19,9 +19,9 @@
     left: 1%;
 
     &:hover {
-        -moz-box-shadow: 0px 3px 15px $lineColor;
-        -webkit-box-shadow: 0px 3px 15px $lineColor;
-        box-shadow: 0px 3px 15px $lineColor;
+        -moz-box-shadow: 0px 3px 15px $darkColor;
+        -webkit-box-shadow: 0px 3px 15px $darkColor;
+        box-shadow: 0px 3px 15px $darkColor;
         transition: 0.5s;
     }
     

@@ -7,7 +7,7 @@
     position: sticky;
     top: 0;
     z-index: 9999;
-    background-color: $lightColor;
+    background-color: $darkColor;
 
     &-wrapper {
         height: 80px;
@@ -18,7 +18,8 @@
         display: flex !important;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 3px solid $lineColor;
+        border-bottom: 3px solid $darkColor;
+
         height: 80px;
     }
 
@@ -44,16 +45,16 @@
         list-style: none;
         text-align: center;
         width: 400px;
-        height: 80px;
 
         @include mobile-devices {
             flex-direction: column;
             justify-content: start;
             width: 100%;
-            height: 100vh;
+            height: 100vh !important;
             position: absolute;
             top: 80px;
             left: -100%;
+            height: 80px;
             transition: all 0.5s ease;
         }
     }
@@ -110,7 +111,7 @@
             display: flex;
             justify-content: center;
             position: absolute;
-            top: 0;
+            top: 6px;
             right: 0;
             transform: translate(-100%, 60%);
             font-size: 1.8rem;

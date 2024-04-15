@@ -15,7 +15,7 @@
         display: flex !important;
         align-items: center;
         justify-content: center;
-        border-top: 3px solid $lineColor;
+        border-top: 3px solid $darkColor;
         height: 80px;
 
         @include tablet-devices {
@@ -43,7 +43,7 @@
         text-align: end;
         font-size: 20px;
         font-weight: 500;
-        color: $fontColor;
+        color: $darkColor;
 
         @include tablet-devices {
             text-align: center;
@@ -61,11 +61,7 @@
     &-item-list {
         text-decoration: none;
         display: inline-block;
-        width: 16%;
-
-        @include laptop-devices {
-            width: 100%;
-        }
+        width: auto;
 
         @include tablet-devices {
             padding-right: 0.5rem;
@@ -73,20 +69,21 @@
         }
     }
 
-    &-social-media {
+    &-social-media-icon {
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        text-decoration: none;
+        border-radius: 50% !important;
+        padding: 8px !important;
+        margin-right: 35px;
+        font-size: 20px !important;
         cursor: pointer;
-        height: 100%;
-        color: $fontColor;
-        font-size: 20px;
-        font-weight: 400;
-    }
-    
-    &-social-media:hover { 
-        font-weight: bold;
-    }
+        text-decoration: none;    
 
+        @include tablet-devices {
+            margin: 0 20px;
+        }
+
+        @include mobile-devices {
+            margin: 0 10px;
+        }
+    }
 }
