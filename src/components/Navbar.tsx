@@ -6,13 +6,18 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { socialMediaList } from '@/assets/data/dataList';
 import { socialMediaTypes } from '@/types/TypesList';
 
+import { FiSun } from "react-icons/fi";
+import { LuMoon } from "react-icons/lu";
+
 const Navbar = () => {
 
    const navbarList = Object.values(navbarTypes);
-   const [click, setClick] = useState<boolean>(false);
+   const [menuBtn, setMenuBtn] = useState<boolean>(false);
+   const [toggleBtn, setToogleBtn] = useState<boolean>(false);
    const [count, setCount] = useState<number>(0);
 
-   const handleClick = () => setClick(!click);
+   const handleMenuBtn = () => setMenuBtn(!menuBtn);
+   const handleToogleBtn = () => setToogleBtn(!toggleBtn);
 
    const handleNavbarClick = (navList: string) => {
       const scrollToId = document.getElementById(navList.toLowerCase());
@@ -25,7 +30,7 @@ const Navbar = () => {
       })
 
       // Handle close menu in mobile view
-      setClick(false);
+      setMenuBtn(false);
    }
 
    return (
@@ -41,12 +46,17 @@ const Navbar = () => {
                         GE.
                      </NavLink>
                   </div>
-                  <div className="navbar-mini-device" onClick={handleClick}>
+                  {/* <div className="" onClick={handleToogleBtn}>
                      { 
-                        click ? <FaTimes /> : <FaBars /> 
+                        toggleBtn ? <FiSun /> : <LuMoon /> 
+                     }
+                  </div> */}
+                  <div className="navbar-mini-device" onClick={handleMenuBtn}>
+                     { 
+                        menuBtn ? <FaTimes /> : <FaBars /> 
                      }
                   </div>
-                  <ul className={ click ? 'navbar-menu active' : 'navbar-menu' }>
+                  <ul className={ menuBtn ? 'navbar-menu active' : 'navbar-menu' }>
                      {
                         navbarList.map((navList: string, id: number) => (
                            <li className="navbar-item" key={id}>
@@ -63,6 +73,11 @@ const Navbar = () => {
                            </li>
                         ))
                      }
+                     {/* <div className="" onClick={handleToogleBtn}>
+                     { 
+                        toggleBtn ? <FiSun /> : <LuMoon /> 
+                     }
+                     </div> */}
                      {/* Social Media Buttons on mobile navbar */}
                      <div className='navbar-social-media'>
                      {

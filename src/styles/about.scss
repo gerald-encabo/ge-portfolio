@@ -76,7 +76,7 @@
             margin-bottom: 14px;
         
             span {
-                color: $lineColor;
+                color: $darkColor;
                 font-weight: 600;
             }
 
@@ -100,13 +100,13 @@
 
     .logo {
         border-radius: 50%;
-        border: 10px solid $lineColor;
+        border: 10px solid $darkColor;
         overflow: hidden;
         width: 70%;
         height: 100%;
         float: right;
-        box-shadow: 0px 0px 30px 3px $lineColor;
-        background-color: $lineColor;
+        box-shadow: 0px 0px 30px 3px $darkColor;
+        background-color: $darkColor;
 
         @include laptop-devices {
             height: auto;

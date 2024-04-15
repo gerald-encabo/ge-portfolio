@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { socialMediaTypes } from '@/types/TypesList';
 import { socialMediaList } from '@/assets/data/dataList';
 
+
 const Footer = () => {
   return (
       <footer className='footer'>
@@ -16,12 +17,12 @@ const Footer = () => {
                                     <li className='footer-item-list' key={list.id}>
                                         <NavLink 
                                             to={list.link}
-                                            className='footer-social-media' 
-                                            aria-label={list.name}
+                                            title={list.name}                                 
                                             target='_blank' 
                                             rel='noreferrer'
+                                            className='footer-social-media-icon global-btn'
                                         >
-                                            {list.name}
+                                            {list.icon}
                                         </NavLink>
                                     </li>
                                 ))

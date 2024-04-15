@@ -30,7 +30,7 @@ export const About = ({id}: useTitleTypes) => {
            backDelay: 1500,
            backSpeed: 60,
            showCursor: true,
-           strings: ['UI Developer', 'AEM Developer', 'Web Specialist']
+           strings: ['Web Developer', 'UI Developer', 'Web Specialist']
        })
   }, [])
 
