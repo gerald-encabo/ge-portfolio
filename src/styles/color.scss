@@ -1,2 +1,9 @@
-$lightColor: #F6F7F9;
-$darkColor: #0F0F0F;
+:root {
+    --lightColor: #F6F7F9;
+    --darkColor: #0F0F0F;
+}
+
+[data-theme="dark"] {
+    --lightColor: #181A1E;
+    --darkColor: #dfdfdf;
+}

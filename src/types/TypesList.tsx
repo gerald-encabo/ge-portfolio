@@ -20,6 +20,11 @@ export interface skillsListType {
   listSkills: string[]
 }
 
+export interface darkThemeTypes {
+  setDarkTheme?: React.ReactNode | null | undefined | any;
+  darkTheme?: React.ReactNode;
+}
+
 export interface categorySkillListType {
   filter: (category: string) => void,
   categoryList: string[]
