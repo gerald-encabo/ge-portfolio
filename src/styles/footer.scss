@@ -15,7 +15,7 @@
         display: flex !important;
         align-items: center;
         justify-content: center;
-        border-top: 3px solid $darkColor;
+        border-top: 3px solid var(--darkColor);
         height: 80px;
 
         @include tablet-devices {
@@ -43,7 +43,7 @@
         text-align: end;
         font-size: 20px;
         font-weight: 500;
-        color: $darkColor;
+        color: var(--darkColor);
 
         @include tablet-devices {
             text-align: center;

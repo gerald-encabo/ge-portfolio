@@ -3,20 +3,20 @@
 
 .global-btn {
     text-decoration: none;
-    background-color: $lightColor;
-    border-bottom: 4px solid $darkColor;
-    border-left: 4px solid $darkColor;
-    border-right: 1px solid $darkColor;
-    border-top: 1px solid $darkColor;
+    background-color: var(--lightColor);
+    border-bottom: 4px solid var(--darkColor);
+    border-left: 4px solid var(--darkColor);
+    border-right: 1px solid var(--darkColor);
+    border-top: 1px solid var(--darkColor);
     border-radius: 4px;
     font-size: 18px;
     padding: 6px;
     cursor: pointer;
 
     &:hover {
-        -moz-box-shadow: 0px 3px 15px $darkColor;
-        -webkit-box-shadow: 0px 3px 15px $darkColor;
-        box-shadow: 0px 3px 15px $darkColor;
+        -moz-box-shadow: 0px 3px 15px var(--darkColor);
+        -webkit-box-shadow: 0px 3px 15px var(--darkColor);
+        box-shadow: 0px 3px 15px var(--darkColor);
         transition: 0.5s;
     }
     

@@ -4,21 +4,22 @@ import { NavLink } from 'react-router-dom'
 import { navbarTypes } from '@/types/TypesList';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { socialMediaList } from '@/assets/data/dataList';
-import { socialMediaTypes } from '@/types/TypesList';
+import { socialMediaTypes, darkThemeTypes } from '@/types/TypesList';
+import { FiSun } from "react-icons/fi";
+import { LuMoon } from "react-icons/lu";
 
-// import { FiSun } from "react-icons/fi";
-// import { LuMoon } from "react-icons/lu";
-
-const Navbar = () => {
+const Navbar = ({setDarkTheme, darkTheme}: darkThemeTypes) => {
 
    const navbarList = Object.values(navbarTypes);
    const [menuBtn, setMenuBtn] = useState<boolean>(false);
-   // const [toggleBtn, setToogleBtn] = useState<boolean>(false);
+   const [toggleBtn, setToogleBtn] = useState<boolean>(false);
    const [count, setCount] = useState<number>(0);
 
    const handleMenuBtn = () => setMenuBtn(!menuBtn);
-   // const handleToogleBtn = () => setToogleBtn(!toggleBtn);
-
+   const handleToogleBtn = () => {
+      setToogleBtn(!toggleBtn);
+      setDarkTheme(!darkTheme);
+   }
    const handleNavbarClick = (navList: string) => {
       const scrollToId = document.getElementById(navList.toLowerCase());
       const location = scrollToId?.offsetTop!;
@@ -46,11 +47,6 @@ const Navbar = () => {
                         GE.
                      </NavLink>
                   </div>
-                  {/* <div className="" onClick={handleToogleBtn}>
-                     { 
-                        toggleBtn ? <FiSun /> : <LuMoon /> 
-                     }
-                  </div> */}
                   <div className="navbar-mini-device" onClick={handleMenuBtn}>
                      { 
                         menuBtn ? <FaTimes /> : <FaBars /> 
@@ -73,11 +69,14 @@ const Navbar = () => {
                            </li>
                         ))
                      }
-                     {/* <div className="" onClick={handleToogleBtn}>
+                     <div 
+                        className="navbar-toggle-switch-btn" 
+                        onClick={handleToogleBtn}
+                     >
                      { 
                         toggleBtn ? <FiSun /> : <LuMoon /> 
                      }
-                     </div> */}
+                     </div>
                      {/* Social Media Buttons on mobile navbar */}
                      <div className='navbar-social-media'>
                      {
