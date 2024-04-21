@@ -71,7 +71,10 @@ const Navbar = ({setDarkTheme, darkTheme}: darkThemeTypes) => {
                      }
                      <div 
                         className="navbar-toggle-switch-btn" 
-                        onClick={handleToogleBtn}
+                        onClick={ () => { 
+                           handleToogleBtn();      
+                           setMenuBtn(false);
+                        }}
                      >
                      { 
                         toggleBtn ? <FiSun /> : <LuMoon /> 
