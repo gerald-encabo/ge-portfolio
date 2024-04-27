@@ -56,7 +56,7 @@ export const About = ({id}: useTitleTypes) => {
           <h4>Hi there, I'm</h4>
           <h1>Gerald Encabo</h1>
           <h3>Front-End <span ref={ textRef }></span></h3>
-          <p>Web developer with {yearExp}+ years of experience building and maintaining responsive websites across diverse industries. Proven of experience within web development basics, modern libraries, and the latest frameworks. Knowledgeable in creating user interfaces, writing & testing codes, troubleshooting issues & vulnerabilities, and implementing new features based on stakeholder feedback. Self-motivated toward learning new skills and adapting modern technologies.</p>
+          <p>Experienced front-end developer with a proven track record in the education, e-commerce, and healthcare sectors. Proficient in web development, utilizing modern libraries and cutting-edge frameworks. Skilled in crafting intuitive user interfaces, coding, testing, and troubleshooting to address issues and vulnerabilities, and integrating new functionalities to meet the demands of both internal and external stakeholders. Eager to delve into new technologies, embrace fresh challenges, and keep abreast of the latest trends and best practices in web development. My aspiration is to leverage my expertise to conceive and deliver innovative solutions that can positively impact the world.</p>
           <UseButton 
             text={navbarTypes.Contact}
             onClick={() => handleContactClickBtn(navbarTypes.Contact.toLowerCase())} 
