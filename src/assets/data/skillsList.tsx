@@ -4,12 +4,12 @@ const skillsCategoryList: Array<skillsListType> = [
     {
         id: 1,
         category: 'Front-End',
-        listSkills: ['HTML5', 'CSS3', 'JavaScript (ES6)', 'SASS/SCSS', 'TypeScript', 'Tailwind', 'Emotion.js', 'Styled Components', 'JSON', 'jQuery', 'Bootstrap5', 'React', 'Redux', 'AJAX']
+        listSkills: ['HTML5', 'CSS3', 'JavaScript (ES6)', 'SASS/SCSS', 'TypeScript', 'Tailwind', 'Styled Components', 'JSON', 'jQuery', 'Bootstrap5', 'React Hooks', 'Redux', 'AJAX']
     },
     {
         id: 2,
         category: 'Back-End',
-        listSkills: ['SQL', 'MySQL', 'NoSQL', 'MongoDB', 'PHP', 'Node.js', 'Express.js', 'ASP.NET', 'GraphQL', 'REST API']
+        listSkills: ['SQL', 'NoSQL', 'Java', 'MongoDB', 'PHP', 'Node.js', 'Express.js', 'ASP.NET', 'RESTful API']
     },
     {
         id: 3,
@@ -19,7 +19,7 @@ const skillsCategoryList: Array<skillsListType> = [
     {
         id: 4,
         category: 'Others',
-        listSkills: ['Web Accessibility', 'Responsive Web Design', 'Agile (Scrum)', 'GitHub', 'Visual Studio', 'Notepad++', 'Adobe Photoshop', 'Adobe Launch', 'Google Analytics', 'Google Tag Manager', 'Figma', 'GlooMaps', 'SiteImprove', 'Semrush', 'Monetate', 'Trello', 'Asana', 'QR Tiger', 'Hotjar', 'Testing Library', 'JEST', 'Webpack', 'Babel']
+        listSkills: ['Responsive Web Design', 'Accessibility Guidelines (WCAG & AODA), ', 'Unit Testing', 'CI/CD', 'Agile (Scrum)', 'GitHub', 'Visual Studio', 'Notepad++', 'Adobe Photoshop', 'Adobe Launch', 'Google Analytics', 'Google Tag Manager', 'Figma', 'GlooMaps', 'SiteImprove', 'Semrush', 'Monetate', 'Trello', 'Asana', 'QR Tiger', 'Hotjar', 'Testing Library', 'JEST', 'Webpack', 'Babel']
     }
 ] 
 
