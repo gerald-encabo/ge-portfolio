@@ -12,7 +12,7 @@ export const About = ({id}: useTitleTypes) => {
   
   const textRef = useRef<any>();
   const currentYear:string = Moment(new Date()).format("YYYY");
-  const yearExp:number = +currentYear - 2018;
+  const yearExp:number = +currentYear - 2019;
 
   const handleContactClickBtn = (navList: string) => {
     const scrollToId = document.getElementById(navList.toLowerCase());
@@ -56,7 +56,7 @@ export const About = ({id}: useTitleTypes) => {
           <h4>Hi there, I'm</h4>
           <h1>Gerald Encabo</h1>
           <h3>Front-End <span ref={ textRef }></span></h3>
-          <p>Experienced front-end developer with a proven track record in the education, e-commerce, and healthcare sectors. Proficient in web development, utilizing modern libraries and cutting-edge frameworks. Skilled in crafting intuitive user interfaces, coding, testing, and troubleshooting to address issues and vulnerabilities, and integrating new functionalities to meet the demands of both internal and external stakeholders. Eager to delve into new technologies, embrace fresh challenges, and keep abreast of the latest trends and best practices in web development. My aspiration is to leverage my expertise to conceive and deliver innovative solutions that can positively impact the world.</p>
+          <p>With over {yearExp}+ years of experience as a front-end developer with a proven track record in the education, e-commerce, and healthcare sectors. Proficient in web development, utilizing modern libraries and cutting-edge frameworks. Skilled in crafting intuitive user interfaces, coding, testing, and troubleshooting to address issues and vulnerabilities, and integrating new functionalities to meet the demands of both internal and external stakeholders. Eager to delve into new technologies, embrace fresh challenges, and keep abreast of the latest trends and best practices in web development. My aspiration is to leverage my expertise to conceive and deliver innovative solutions that can positively impact the world.</p>
           <UseButton 
             text={navbarTypes.Contact}
             onClick={() => handleContactClickBtn(navbarTypes.Contact.toLowerCase())} 
