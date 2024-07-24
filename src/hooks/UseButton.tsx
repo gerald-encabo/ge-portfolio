@@ -1,4 +1,3 @@
-import '@/styles/use-button.scss'
 import { Link } from 'react-router-dom'
 import { useButtonTypes } from '@/types/TypesList'
 
@@ -14,7 +13,7 @@ const useButton = (
         key={key}
         target={target}
         rel={rel}
-        className={`global-btn`}
+        className={'global-btn'}
       >
         {text}
       </Link>
