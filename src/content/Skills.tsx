@@ -1,4 +1,3 @@
-import '@/styles/skills.scss';
 import Title from '@/hooks/UseTitle';
 import Spinner from '@/components/Spinner';
 import ListSkills from '@/components/ListSkills';
@@ -32,17 +31,17 @@ const Skills = ({id, heading}: useTitleTypes) => {
   }
 
   return (
-    <section className={id} id={id} >
-      <div className='container'>
+    <section className={id + ' h-auto w-screen bg-lightColor'} id={id} >
+      <div className='global-container'>
         <Title heading={heading} />
-        <div className='skills-container'>
-          <div className='skills-left-column'>
+        <div className='flex items-center w-100 h-100 py-16 px-[10%] desktop:px-[2%] tablet:py-8 tablet:px-0 mobile:flex-col'>
+          <div className='h-full w-[20%] mobile:w-full'>
             <ButtonCategory 
               filter={filter}
               categoryList={categoryList} 
             />
           </div>
-          <div className='skills-right-column'>
+          <div className='h-full w-[80%] mobile:w-full'>
             <Suspense fallback={<Spinner />}>
               <ListSkills skillsList={skillsList} />
             </Suspense>

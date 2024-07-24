@@ -1,0 +1,147 @@
+/* Global Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Initial Name & Title Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --lightColor: #F6F7F9;
+    --darkColor: #0F0F0F;
+}
+
+[data-theme="dark"] {
+    --lightColor: #15202B;
+    --darkColor: #D8D8D8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+    /* Remove scrollbar in every page */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-scrollbar {
+        display: none;
+    }
+}
+
+@layer components {
+    .global-container {
+        max-width: 2000px;
+        width: 90%;
+        display: grid;
+        align-content: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .global-btn,
+    .global-social-media {
+        text-decoration: none;
+        color: theme('colors.darkColor');
+        background-color: theme('colors.lightColor');
+        border-bottom: 4px solid theme('colors.darkColor');
+        border-left: 4px solid theme('colors.darkColor');
+        border-right: 1px solid theme('colors.darkColor');
+        border-top: 1px solid theme('colors.darkColor');
+        border-radius: 4px;
+        font-size: 18px;
+        padding: 6px;
+        cursor: pointer;
+        width: auto;
+    }
+    .global-social-media {
+        position: fixed;
+        font-size: 30px !important;
+        width: 40px !important;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        bottom: 30%;
+        left: 1%;
+    }
+    .global-scroll-to-top-btn {
+        position: fixed;
+        bottom: 100px;
+        right: 5%;
+        z-index: 10;
+        border: 0;
+    }
+    .global-scroll-to-top-btn > a {
+        display: flex;
+        justify-content: center;
+        padding: 10px 6px;
+    }
+    .global-btn:hover,
+    .global-social-media:hover,
+    .global-scroll-to-top-btn:hover,
+    .skills-active {
+        -moz-box-shadow: 0px 3px 15px theme('colors.darkColor');
+        -webkit-box-shadow: 0px 3px 15px theme('colors.darkColor');
+        box-shadow: 0px 3px 15px theme('colors.darkColor');
+        transition: 0.5s;
+    }
+    .global-btn:active,
+    .global-social-media:active {
+        border-bottom-width: 2px;
+        border-left-width: 2px;
+    }
+}
+
+@layer utilities {
+     .navbar-active-btn  {
+        transition-duration: 0.3s;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .navbar-active-window {
+        background-color: theme('colors.lightColor');
+        left: 0 !important;
+        opacity: 1;
+        transition: all 0.6s ease;
+        z-index: 1;
+    }
+    .loadingSpinnerContainer {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 5000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .loadingSpinner {
+        width: 64px;
+        height: 64px;
+        border: 8px solid;
+        border-color: #000 transparent #555 transparent;
+        border-radius: 50%;
+        animation: spin 1.2s linear infinite;
+    }
+    @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+    }
+    
+}
+
+@layer base {
+
+}

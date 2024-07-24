@@ -1,6 +1,5 @@
 import Layout from "./structure/Layout"
 import { Analytics } from '@vercel/analytics/react';
-import '@/styles/global-style.scss'
 import { useState } from "react";
 
 function App() {
