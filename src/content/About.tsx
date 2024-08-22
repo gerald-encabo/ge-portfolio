@@ -11,7 +11,7 @@ export const About = ({id}: useTitleTypes) => {
   
   const textRef = useRef<any>();
   const currentYear:string = Moment(new Date()).format("YYYY");
-  const yearExp:number = +currentYear - 2020;
+  const yearExp:number = +currentYear - 2019;
 
   const handleContactClickBtn = (navList: string) => {
     const scrollToId = document.getElementById(navList.toLowerCase());
