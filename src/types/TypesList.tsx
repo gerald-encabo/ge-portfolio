@@ -71,3 +71,7 @@ export interface projectTypes {
   desc: string,
   teckStack: string
 }
+
+export interface InitialStateTypes {
+  isDarkMode: boolean,
+}
