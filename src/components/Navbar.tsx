@@ -6,14 +6,24 @@ import { socialMediaList } from '@/assets/data/dataList';
 import { socialMediaTypes, darkThemeTypes } from '@/types/TypesList';
 import { FiSun } from "react-icons/fi";
 import { LuMoon } from "react-icons/lu";
+import { useDispatch, useSelector } from "react-redux";
+import { State } from "@/state/Redux";
+import { setIsDarkMode } from "@/state/Redux";
 
 const Navbar = ({setDarkTheme, darkTheme}: darkThemeTypes) => {
 
+   const dispatch = useDispatch();
+   const isDarkMode = useSelector((state: State) => state.global.isDarkMode);
+   
    const navbarList = Object.values(navbarTypes);
    const [menuBtn, setMenuBtn] = useState<boolean>(false);
    const [toggleBtn, setToogleBtn] = useState<boolean>(false);
    const [count, setCount] = useState<number>(0);
 
+   const toggleDarkMode = () => {
+      console.log('sample toggle darkmode')
+      dispatch(setIsDarkMode(!isDarkMode));
+   }
    const handleMenuBtn = () => setMenuBtn(!menuBtn);
    const handleToogleBtn = () => {
       setToogleBtn(!toggleBtn);
@@ -47,9 +57,9 @@ const Navbar = ({setDarkTheme, darkTheme}: darkThemeTypes) => {
                      </NavLink>
                   </div>
                   <div className="text-darkColor hidden mobile:flex mobile:justify-center mobile:absolute mobile:top-[50px] mobile:right-[40px] mobile:text-[1.8rem] mobile:cursor-pointer mobile:translate-y-[-100%] mobile:translate-x-[60%]" onClick={handleMenuBtn}>
-                     { 
-                        menuBtn ? <FaTimes /> : <FaBars /> 
-                     }
+                        { 
+                           menuBtn ? <FaTimes /> : <FaBars /> 
+                        }
                   </div>
                   <ul className={`flex justify-between items-center list-none text-center w-[400px] mobile:flex-col mobile:justify-start mobile:w-full mobile:h-screen mobile:absolute mobile:top-[80px] mobile:left-[-100%] mobile:transition-all mobile:ease-in mobile:duration-[0.5s] ${menuBtn ? 'navbar-active-window' : ''}`}>
                      {
@@ -73,11 +83,12 @@ const Navbar = ({setDarkTheme, darkTheme}: darkThemeTypes) => {
                         onClick={ () => { 
                            handleToogleBtn();      
                            setMenuBtn(false);
+                           toggleDarkMode();
                         }}
                      >
-                     { 
-                        toggleBtn ? <FiSun /> : <LuMoon /> 
-                     }
+                        { 
+                           toggleBtn ? <FiSun /> : <LuMoon /> 
+                        }
                      </div>
                      {/* Social Media Buttons on mobile navbar */}
                      <div className='hidden mobile:flex mobile:w-full mobile:h-[15%] mobile:items-center mobile:justify-center'>
