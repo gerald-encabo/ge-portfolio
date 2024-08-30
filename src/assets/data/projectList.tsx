@@ -7,7 +7,7 @@ export const projectList: Array<projectTypes> = [
     {
         id: 1,
         link1: 'https://github.com/gerald-encabo/ramen-house',
-        link2: 'https://ramen-house.vercel.app/',
+        link2: 'https://main.d2y29ynsv70dc8.amplifyapp.com/',
         icon1: 'Code',
         icon2: 'Demo',
         img: ramenHouse,
