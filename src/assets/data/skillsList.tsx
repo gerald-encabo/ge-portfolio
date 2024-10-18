@@ -14,7 +14,7 @@ const skillsCategoryList: Array<skillsListType> = [
     {
         id: 3,
         category: 'CMS & Cloud Services',
-        listSkills: ['Adobe Experience Manager (AEM)', 'Axero Solutions', 'Strapi', 'ContentStack', 'Sitecore', 'WordPress', 'OpenCMS', 'Drupal', 'Heroku', 'Render', 'Cloudinary', 'Vercel', 'Amazon Web Services (AWS)']
+        listSkills: ['Adobe Experience Manager (AEM)', 'Axero Solutions', 'ContentStack', 'Sitecore', 'WordPress', 'Magento', 'Drupal', 'Strapi', 'OpenCMS', 'Heroku', 'Render', 'Cloudinary', 'Vercel', 'Amazon Web Services (AWS)']
     },
     {
         id: 4,
